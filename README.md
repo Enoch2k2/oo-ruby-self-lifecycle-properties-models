@@ -30,4 +30,25 @@ pet2 = Pet.new
 
 ### What are properties?
 
-Instance properties is what values we can give an instance. For example, we all have a name. A name is a property of a person instance, us.
+Instance properties is what values we can give an instance. These values are container in an instance variable (`@variable`) so that the entire instance knows about that variable. For example, you have a name. A name is a property of a person instance, you. And the instance variable `@name` would be defined to have your name as a string.
+
+Instance variables are stored and saved within the instance and allows the instance to know about it throughout the class.
+
+In a class how do we give our instances these properties? To give a property, we define a writer method. And to retrieve that property, we define a reader method.
+
+For example:
+```
+class Person
+  # this is our writer method
+  def name=(name)
+    # we set the instance variable to the name being passed in
+    @name = name
+  end
+
+  #this is our reader method
+  def name
+    # since we are return an instance variable, after we use our writer method, @name will have a value
+    @name
+  end
+end
+```
