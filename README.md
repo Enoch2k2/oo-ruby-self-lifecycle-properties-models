@@ -51,4 +51,18 @@ class Person
     @name
   end
 end
+
+# so now we can create our new instance of Person and give it properties for name
+
+# here we'll define two different people instances
+person1 = Person.new
+person2 = Person.new
+
+# here we'll give names to both people, with the writer method for name
+person1.name = "Bob"
+person2.name = "Sally"
+
+# we can then retieve their names by calling the reader method
+puts "Person 1's name is: #{person1.name}!" # would output Person 1's name is: Bob!
+puts "Person 2's name is: #{person2.name}!" # would output Person 2's name is: Sally!
 ```
