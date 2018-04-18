@@ -30,4 +30,4 @@ pet2 = Pet.new
 
 ### What are properties?
 
-Instance properties is what values we can give an instance. For example, we all have a name. A name is a propert of a person instance, us.
+Instance properties is what values we can give an instance. For example, we all have a name. A name is a property of a person instance, us.
